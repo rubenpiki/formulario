@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Matriculacion</title>
+    <style>
+        table, th, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+  text-align: center;
+}
+        h1{
+            text-align: left;
+            margin-left: 14%;
+        }
+    </style>
+    <h1>Formulario de Matriculacion</h1>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="5">Datos de matriculacion</th>
+  <tr>
+    <th>Matricula</th>
+    <th>Fcha de matriculacion</th>
+    <th>Dueño</th>
+    <th>Edad del vehiculo</th>
+    <th>Color del vehiculo</th>
+  </tr>
+  <tr>
+    <td>
+        <form>
+  <label for="Matricula"></label><br>
+  <input type="text" id="Matricula" name="Matricula" value="Escribe aqui">
+  <br>
+  <button>Confirmar</button>
+        </form>
+    </td>
+    <td>
+        <form>
+  <label for="FechaNacimiento"></label><br>
+  <input type="text" id="FechaNacimiento" name="FechaNacimiento" value="Escribe aqui">
+  <br>
+  <button>Confirmar</button>
+        </form>
+    </td>
+    <td><form>
+  <label for="Dueño"></label><br>
+  <input type="text" id="Dueño" name="Dueño" value="Escribe aqui">
+  <br>
+  <button>Confirmar</button>
+        </form>
+    </td>
+    </td>
+    <td>
+  <form>
+  <input type="radio" id="pocos" name="EdadVehiculo" value="HTML">
+  <label for="html">0-4</label><br>
+  <input type="radio" id="medio" name="EdadVehiculo" value="CSS">
+  <label for="css">5-10</label><br>
+  <input type="radio" id="muchos" name="EdadVehiculo" value="JavaScript">
+  <label for="javascript">+10</label>
+</form> 
+  <br>
+  <button>Confirmar</button>
+        </form>
+        <td>
+            <form action="registrardatos.php" method="post">
+  Seleccione el color del vehiculo<br>
+  <select name="colores[]" size="4" multiple>
+    <option value="1">Rojo</option>
+    <option value="2">Verde</option>
+    <option value="3">Azul</option>
+    <option value="4">Amarillo</option>
+    <option value="5">Blanco</option>
+    <option value="6">Negro</option>
+    <option value="7">Naranja</option>
+    <option value="8">Violeta</option>
+  </select>
+  <br>
+  <input type="submit" value="Enviar">
+        </td>
+    </td>
+
+  </tr>
+
+    
+</body>
+</html>
